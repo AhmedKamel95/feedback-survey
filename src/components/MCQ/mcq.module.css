@@ -1,0 +1,27 @@
+.optionsContainer {
+  list-style: none;
+}
+
+.list {
+  background-color: var(--lightGrey);
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.radio {
+  display: none;
+}
+
+.label {
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+.radio input[type='radio']:hover ~ span,
+input[type='radio']:checked ~ span {
+  background: var(--primaryColor);
+  color: var(--white);
+}

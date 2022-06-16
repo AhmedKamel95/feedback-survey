@@ -1,0 +1,32 @@
+.rating {
+  display: flex;
+  font-size: 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  height: inherit;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating span {
+  display: flex;
+  width: 100px;
+  height: inherit;
+  font-size: 24px;
+  justify-content: center;
+  align-items: center;
+  background: var(--lightGrey);
+  color: #000;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 0 2px;
+}
+
+.rating input[type='radio']:hover ~ span,
+input[type='radio']:checked ~ span {
+  background: var(--primaryColor);
+  color: var(--white);
+}

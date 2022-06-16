@@ -1,0 +1,93 @@
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+}
+
+.questionLabelImg {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+
+.questionLabelImg p:first-of-type {
+  font-size: var(--fs-xl);
+}
+
+.helperText {
+  color: var(--grey);
+  letter-spacing: 0.15em;
+  font-weight: var(--fw-semibold);
+  text-transform: uppercase;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.answerContainer {
+  padding: 20px;
+  background: var(--white);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mcQuestion {
+  padding: 30px;
+  background-color: var(--lightGrey);
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.mcQuestion:hover {
+  color: var(--white);
+  background-color: var(--darkGrey);
+}
+
+textarea {
+  width: 100%;
+  height: 230px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 1px solid #d9dcde;
+  border-radius: 3px;
+  font-family: inherit;
+  resize: none;
+}
+
+progress {
+  border-radius: 7px;
+  width: 100%;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  height: 10px;
+}
+
+progress:after {
+  content: 'Questions completed';
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-weight: var(--fw-bold);
+  line-height: 40px;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #f2f3f4;
+  border-radius: 7px;
+}
+progress::-webkit-progress-value {
+  background-image: linear-gradient(to right, #1ddebb, #98fffb);
+  border-radius: 7px;
+}
+
+.steps {
+  margin-top: 40px;
+}
+
+.rateBarContainer {
+  height: 100px;
+}
